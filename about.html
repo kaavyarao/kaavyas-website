@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Saaya Dance</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <style type="text/css">
+	    html,body {
+
+		    background: url('background1.jpg')  fixed;
+		    -webkit-background-size: cover; /* For WebKit*/
+		    -moz-background-size: cover;    /* Mozilla*/
+		    -o-background-size: cover;      /* Opera*/
+		    background-size: cover auto;         /* Generic*/
+		    background-position: left top;
+	    	overflow-x: hidden;
+			}
+    	.nopadding {
+			padding: 0 !important;
+			margin: 0 !important;
+			transition: .75s;
+	   		-webkit-transition: .75s;
+		}
+		#map{
+			height: 400px;
+		}
+		#title{
+			position: absolute;
+ 			top: 70%;
+  			left:12.5%;
+  			transform: translate(-50%, -50%);			
+  			z-index: 1;
+		}
+		#mainPic{
+			position: absolute;
+ 			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);			
+  			z-index: 0;
+		}
+		.tabt{
+			transition: .75s;
+	   		-webkit-transition: .75s;
+			background:#050344 
+		}
+		.tabt:Hover{
+			transition: .75s;
+	   		-webkit-transition: .75s;
+			background:#000000; 
+			cursor: pointer;
+		}	
+		.downArrow{
+			 opacity: .9;
+			position: fixed;
+ 			top: 90%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);			
+  			z-index: 3;
+			transition: .75s;
+	   		-webkit-transition: .75s;
+	   		background: #101010;
+	   		color: white;
+		}
+		.downArrow:Hover{
+			color: #202020;
+			background: #AAAAAA;
+  			opacity: .75;
+			transition: .75s;
+	   		-webkit-transition: .75s;
+			cursor: pointer;
+		}				
+    </style>
+
+</head>
+<body class="container-fluid">
+
+<div class="row">
+
+<!--==============================-->
+<!--NavBar-->
+<div id='navBar' class="col-12" style="height:50px; background:#050344">
+	<div style="height:75px;">
+		<img id="title" style="height:75px;min-width:150px;" src = "title.png"/>
+	</div>
+</div>
+
+<!--==============================-->
+<!--Kaavya view-->
+<div class="col-12" style="color: white;height:25px;"></div>
+<div class="col-12" style="padding: 0px 0px 0px 15px; opacity: .975">
+<div class="col-12 row" style="height: 300px; ">
+		
+
+
+	<div class="col-12 text-center" style="color: white;background:#303030">
+		<div class="col-12" style="color: white;height:10px;"></div>
+		<div class="" style="font-weight: bold; font-size: 50px; color: white;">About US</div>
+		<div class="col-12" style="color: white;height:10px;"></div>
+
+		Saaya was established in 2016 and was built upon the notion of unity across cultures through the expression of dance. Primarily focusing on South-Asian influence, Saaya strives to provide a comfortable environment for people of all ages, cultures, and backgrounds to share the joy of Bollywood, Folk, Semi-Classical, Hip-Hop, and more!	
+	</div>
+
+</div>
+</div>
+<!--==============================-->
+<!--Kaavya view-->
+<div class="col-12" style="color: white;height:25px;"></div>
+<div class="col-12" style="padding: 0px 50px 0px 65px; opacity: .975">
+<div class="col-12 row" style="height: 300px; ">
+		
+	<div class="col-4" style="color: white;;background:#202020">
+		
+	</div>
+
+	<div class="col-8" style="color: white;background:#050344">
+		<div class="col-12" style="color: white;height:10px;"></div>
+
+		Kaavya Rao, Founder and Director of Saaya, has been teaching dance to several students since 2010. Having grown up as a first-generation American-Indian, and being exposed to a variety of different cultures, she wanted to establish a platform to successfully mix the Eastern & Western worlds and she did so through dance! Kaavya has been trained in the traditional and classical Indian dance style, Kuchipudi, through her guru Smt. Mrinalini Sadananda for 17 years, helped co-found the Indian Classical dance team, Mason Mahima, at George Mason University, and was the captain and president of Mason’s fusion dance team, Mason Ke Rang, for two years. 
+	</div>
+
+</div>
+</div>
+<!--==============================-->
+<!--Prit view-->
+<div class="col-12" style="color: white;height:25px;"></div>
+<div class="col-12" style="padding: 0px 50px 0px 65px; opacity: .975">
+<div class="col-12 row" style="height: 300px; ">
+
+	<div class="col-8" style="color: white;background:#050344">
+		<div class="col-12" style="color: white;height:10px;"></div>
+		Prithvi Vijayanand started dancing at a young age with roots in breakdancing and kuthu. In college, he danced with George Mason University’s fusion team, Mason ke Rang, for two years – the second of which as a co-captain. It was during this time that he diversified his skill set and cultivated an interest in South Asian styles like Bhangra and Bollywood, as well as Western urban styles.
+	</div>
+	<div class="col-4" style="color: white;;background:#202020">
+		
+	</div>
+</div>
+</div>
+<!--==============================-->
+<!--anika view-->
+<div class="col-12" style="color: white;height:25px;"></div>
+<div class="col-12" style="padding: 0px 50px 0px 65px; opacity: .975">
+<div class="col-12 row" style="height: 300px; ">
+		
+	<div class="col-4" style="color: white;;background:#202020">
+		
+	</div>
+
+	<div class="col-8" style="color: white;background:#050344">
+		<div class="col-12" style="color: white;height:10px;"></div>
+		Anika Mahmood has been dancing since she could walk. She began her training in folk and switched to classical – she has now been training in Odissi for over 10 years. In college, she danced with Mason’s very own Mason ke Rang, the Bollywood fusion dance team. She has extensive stage and event experience – not only with choreography but with production, costumes, makeup, and lighting.
+	</div>
+
+</div>
+</div>
+
+<div class="col-12" style="height: 50px;"></div >
+
+<div class="col-12" style="padding: 0px 15px 0px 15px; opacity: .975">
+
+<div class="row" style="padding: 0px 15px 0px 15px; opacity: .975">
+<div class="col-6" style="height: 450px; background:#505050 ">
+
+	<div class="col-12" style="height: 30px;"></div>
+	<div class="col-12 text-center" style="font-size:50px;color: white;font-weight: bold;letter-spacing:7.5px"> Questions</div>
+
+	<div class="col-12" style="height: 30px;"></div>
+	<input class="col-12" style="height: 30px;" type="text" placeholder="Email">
+
+	<div class="col-12" style="height: 30px;"></div>
+	<input class="col-12" style="height: 30px;" type="text" placeholder="Subject">
+
+	<div class="col-12" style="height: 30px;"></div>
+	<textarea class="col-12" style="height: 150px;" placeholder="Enter stuff"></textarea>
+
+</div>
+<div class="col-6" style="height: 450px; background:#303030 ">
+	<div class="col-12" style="height: 30px;"></div>
+	<div class="col-12 text-center" style="font-size:50px;color: white;font-weight: bold;letter-spacing:7.5px"> Contact</div>
+
+	<div class="col-12" style="height: 30px;"></div>
+	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">12345 wonderland wonderworld 67890</div>
+
+	<div class="col-12" style="height: 30px;"></div>
+	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">Number: Call me im lonely</div>
+
+	<div class="col-12" style="height: 30px;"></div>
+	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">Email: Still lonely</div>
+
+</div>
+
+</div>
+</div>
+
+
+	
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Saaya Dance</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <style type="text/css">
+	    html,body {
+
+		    background: url('background1.jpg')  fixed;
+		    -webkit-background-size: cover; /* For WebKit*/
+		    -moz-background-size: cover;    /* Mozilla*/
+		    -o-background-size: cover;      /* Opera*/
+		    background-size: cover auto;         /* Generic*/
+		    background-position: left top;
+	    	overflow-x: hidden;
+			}
+    	.nopadding {
+			padding: 0 !important;
+			margin: 0 !important;
+			transition: .75s;
+	   		-webkit-transition: .75s;
+		}
+		#map{
+			height: 400px;
+		}
+		#title{
+			position: absolute;
+ 			top: 70%;
+  			left:12.5%;
+  			transform: translate(-50%, -50%);			
+  			z-index: 1;
+		}
+		#mainPic{
+			position: absolute;
+ 			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);			
+  			z-index: 0;
+		}
+		.tabt{
+			transition: .75s;
+	   		-webkit-transition: .75s;
+			background:#050344 
+		}
+		.tabt:Hover{
+			transition: .75s;
+	   		-webkit-transition: .75s;
+			background:#000000; 
+			cursor: pointer;
+		}	
+		.downArrow{
+			 opacity: .9;
+			position: fixed;
+ 			top: 90%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);			
+  			z-index: 3;
+			transition: .75s;
+	   		-webkit-transition: .75s;
+	   		background: #101010;
+	   		color: white;
+		}
+		.downArrow:Hover{
+			color: #202020;
+			background: #AAAAAA;
+  			opacity: .75;
+			transition: .75s;
+	   		-webkit-transition: .75s;
+			cursor: pointer;
+		}				
+    </style>
+
+</head>
+<body class="container-fluid">
+
+<div class="row">
+
+<!--==============================-->
+<!--NavBar-->
+<div id='navBar' class="col-12" style="height:50px; background:#050344">
+	<div style="height:75px;">
+		<img id="title" style="height:75px;min-width:150px;" src = "title.png"/>
+	</div>
+</div>
+<!--==============================-->
+<!--First view-->
+<div class="col-12" style="height:450px; min-width:600px; overflow:hidden; ">
+
+	<div style="height:300px;">
+		<img id="mainPic" style="height:300px;min-width:300px;" src = "img3.png"/>
+	</div>
+	<div style="height:300px;">
+		<img id="mainPic" style="height:300px;min-width:300px;border-radius: 50%" src = "img4.png"/>
+	</div>
+	<div class='downArrow text-center' style="height:75px;width:75px; border-radius: 50%; ">
+		<div style=" padding: 20px 0px 0px 0px; font-weight:bold;font-size: 20px;">down</div>
+	</div>
+
+</div>
+<!--==============================-->
+<!--Second view-->
+<div class="col-12" style="padding: 0px 15px 0px 15px; opacity: .975">
+<div class="col-12" style="height: 500px; background:#202020 ">
+
+	<div class="col-12" style="color: white;height:75px;"></div>
+
+	<div class='row'>
+
+		<div class="tab1 col-4" style="padding: 5px;">
+			<div class=" tabt text-center" style="height:300px; ">
+				<div style="height: 100px"></div>
+				<div style="color: white;letter-spacing:3px;font-family: Impact; font-size: 50px;">
+					About
+				</div>
+			</div>
+		</div>
+
+		<div class="col-4" style="padding: 5px;">
+			<div class=" tabt text-center" style="height:300px; ">
+				<div style="height: 100px"></div>
+				<div style="color: white;letter-spacing:3px;font-family: Impact; font-size: 50px;">
+					Classes
+				</div>
+			</div>
+		</div>
+
+		<div class="col-4" style="padding: 5px;">
+			<div class=" tabt text-center" style="height:300px; ">
+				<div style="height: 100px"></div>
+				<div style="color: white;letter-spacing:3px;font-family: Impact; font-size: 50px;">
+					Company
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="col-12" style="color: white;height:35px;"></div>
+
+	<div class="col-12" style="background: #AAAAAA;height:2.5px;"></div>
+
+	<div class="col-12 text-center" style="color: white;height:30px; color:#AAAAAA"> “Some women fear the fire. Some women simply become it” – R.H. Sin</div>
+
+	<div class="col-12" style="background: #AAAAAA;height:2.5px;"></div>
+
+</div>
+</div>
+
+<div class="col-12" style="height: 100px;"></div >
+
+<div class="col-12">
+	<div id='map'>
+		
+	</div>
+</div>
+
+<div class="col-12" style="padding: 0px 15px 0px 15px; opacity: .975">
+
+<div class="row" style="padding: 0px 15px 0px 15px; opacity: .975">
+<div class="col-6" style="height: 450px; background:#505050 ">
+
+	<div class="col-12" style="height: 30px;"></div>
+	<div class="col-12 text-center" style="font-size:50px;color: white;font-weight: bold;letter-spacing:7.5px"> Questions</div>
+
+	<div class="col-12" style="height: 30px;"></div>
+	<input class="col-12" style="height: 30px;" type="text" placeholder="Email">
+
+	<div class="col-12" style="height: 30px;"></div>
+	<input class="col-12" style="height: 30px;" type="text" placeholder="Subject">
+
+	<div class="col-12" style="height: 30px;"></div>
+	<textarea class="col-12" style="height: 150px;" placeholder="Enter stuff"></textarea>
+
+</div>
+<div class="col-6" style="height: 450px; background:#303030 ">
+	<div class="col-12" style="height: 30px;"></div>
+	<div class="col-12 text-center" style="font-size:50px;color: white;font-weight: bold;letter-spacing:7.5px"> Contact</div>
+
+	<div class="col-12" style="height: 30px;"></div>
+	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">12345 wonderland wonderworld 67890</div>
+
+	<div class="col-12" style="height: 30px;"></div>
+	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">Number: Call me im lonely</div>
+
+	<div class="col-12" style="height: 30px;"></div>
+	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">Email: Still lonely</div>
+
+</div>
+
+</div>
+</div>
+
+
+	
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUE9SXHayTCBZhEYl0fB1L-RfYK-Iit9w&libraries=places"></script>
+
+<script type="text/javascript">
+	var map;
+
+	function initMap() 
+	{
+	    map = new google.maps.Map(document.getElementById('map'), {
+	      center: {lat: 0, lng: -0},
+	      zoom: 12
+	    });
+	}
+	initMap();
+
+	 $(".tab1").click(function(event){
+   		window.location.href='about.html';
+
+
+    });
+
+	 $(".downArrow").click(function(event){
+
+	 	if($(window).scrollTop()<500)
+        	$('html, body').animate({scrollTop: '500px'}, 500);
+        else if($(window).scrollTop()<1050){
+        	$('html, body').animate({scrollTop: '1050px'}, 500);
+        }else if($(window).scrollTop()<1500){
+        	$('html, body').animate({scrollTop: '1500px'}, 500);
+        }
+
+    });
+</script>
+
+</body>
+</html>
