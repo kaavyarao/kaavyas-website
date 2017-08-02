@@ -13,7 +13,7 @@
     <style type="text/css">
 	    html,body {
 
-		    background: url('background1.jpg')  fixed;
+		    background: url('background2.jpg')  fixed;
 		    -webkit-background-size: cover; /* For WebKit*/
 		    -moz-background-size: cover;    /* Mozilla*/
 		    -o-background-size: cover;      /* Opera*/
@@ -40,7 +40,7 @@
 		#mainPic{
 			position: absolute;
  			top: 50%;
-  			left: 50%;
+  			left: 52%;
   			transform: translate(-50%, -50%);			
   			z-index: 0;
 		}
@@ -75,6 +75,9 @@
 	   		-webkit-transition: .75s;
 			cursor: pointer;
 		}				
+		.bckBtn{
+			cursor: pointer;
+		}				
     </style>
 
 </head>
@@ -86,7 +89,7 @@
 <!--NavBar-->
 <div id='navBar' class="col-12" style="height:50px; background:#050344">
 	<div style="height:75px;">
-		<img id="title" style="height:75px;min-width:150px;" src = "title.png"/>
+		<img id="title " class="bckBtn" style="height:75px;min-width:150px;" src = "title.png"/>
 	</div>
 </div>
 <!--==============================-->
@@ -122,7 +125,7 @@
 			</div>
 		</div>
 
-		<div class="col-4" style="padding: 5px;">
+		<div class="tab2 col-4" style="padding: 5px;">
 			<div class=" tabt text-center" style="height:300px; ">
 				<div style="height: 100px"></div>
 				<div style="color: white;letter-spacing:3px;font-family: Impact; font-size: 50px;">
@@ -131,7 +134,7 @@
 			</div>
 		</div>
 
-		<div class="col-4" style="padding: 5px;">
+		<div class="tab3 col-4" style="padding: 5px;">
 			<div class=" tabt text-center" style="height:300px; ">
 				<div style="height: 100px"></div>
 				<div style="color: white;letter-spacing:3px;font-family: Impact; font-size: 50px;">
@@ -146,7 +149,7 @@
 
 	<div class="col-12" style="background: #AAAAAA;height:2.5px;"></div>
 
-	<div class="col-12 text-center" style="color: white;height:30px; color:#AAAAAA"> “Some women fear the fire. Some women simply become it” – R.H. Sin</div>
+	<div class="col-12 text-center" style="color: white;height:30px; font-weight: bold; font-size:20px;  color:#AAAAAA"> “Some women fear the fire. Some women simply become it” – R.H. Sin</div>
 
 	<div class="col-12" style="background: #AAAAAA;height:2.5px;"></div>
 
@@ -184,13 +187,13 @@
 	<div class="col-12 text-center" style="font-size:50px;color: white;font-weight: bold;letter-spacing:7.5px"> Contact</div>
 
 	<div class="col-12" style="height: 30px;"></div>
-	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">12345 wonderland wonderworld 67890</div>
+	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">4530 Gaston St. Chantilly VA 20151</div>
 
 	<div class="col-12" style="height: 30px;"></div>
-	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">Number: Call me im lonely</div>
+	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">Number: 703-362-8998</div>
 
 	<div class="col-12" style="height: 30px;"></div>
-	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">Email: Still lonely</div>
+	<div class="col-12 text-center" style="font-size: 20px;color: white;font-weight: bold;">Email: Kaavya@saaydance.com</div>
 
 </div>
 
@@ -213,18 +216,26 @@
 	function initMap() 
 	{
 	    map = new google.maps.Map(document.getElementById('map'), {
-	      center: {lat: 0, lng: -0},
+	      center: {lat: 38.879803, lng: -77.432397},
 	      zoom: 12
 	    });
 	}
 	initMap();
+	var marker = new google.maps.Marker({
+      	position: {lat: 38.879803, lng: -77.432397},
+      	map: map,
+      	title: 'Hello World!'
+    });
 
 	 $(".tab1").click(function(event){
    		window.location.href='about.html';
-
-
     });
-
+	 $(".tab2").click(function(event){
+   		window.location.href='schedule.html';
+    });
+	 $(".tab3").click(function(event){
+   		window.location.href='company.html';
+    });
 	 $(".downArrow").click(function(event){
 
 	 	if($(window).scrollTop()<500)
